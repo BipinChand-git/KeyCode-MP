@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(whitesmoke, rgb(160, 200, 232));
+}
+
+header h1{
+    margin: 2rem;
+    cursor: pointer;
+    color: blue;
+}
+
+.inputs {
+    width: 100%;
+}
+    
+.inputs input {
+    margin: 3em auto;
+    padding: 1rem 3rem;
+    font-size: 2rem; 
+    border: 4px outset #333;
+}
+
+.insert { 
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+    
+.key {
+    width: 100px;
+    height: 100px;
+    padding: 4rem;
+    border: 2px solid #000;  
+    box-shadow: 1px 1px 10px 5px #333;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+small {
+    text-align: center;
+    position: absolute;
+    top: -35px;
+    left: 20px;
+}
+
+.key:nth-child(odd) small{
+    left: 35px;
+}
